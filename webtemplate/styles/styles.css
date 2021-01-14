@@ -151,8 +151,7 @@
             padding:10px;
             justify-content: center;
             align-self: center;
-            margin-right: 10%;
-            margin-left: 10%;
+
             
         }
         #ikonelista {
@@ -202,6 +201,13 @@
             opacity: 1;
             text-decoration: none;
             padding-right: auto;
+        }
+        #naslov a:nth-child(2){
+            background-color: #376DF9;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
         }
         #singup{
             background-color: rgb(49, 69, 247);
@@ -268,8 +274,8 @@
             font-family: "Heebo", sans-serif;
             color: #959CB1;
             text-align: center;
-            margin-left: 14%;
-            margin-right: 14%;
+            margin-left: 25%;
+            margin-right: 25%;
             margin-bottom: 4%;
             font-size: 20px;
             line-height: 32px;
@@ -353,7 +359,8 @@
         }
         #cssve p {
             font-size: 21px;
-            
+            margin-left: 25%;
+            margin-right: 25%;
         }
         #poljacon {
 
@@ -483,7 +490,7 @@
         }
         .topnav {
             overflow: hidden;
-            background-color: #333;
+            background-color: #16171B;
             width: auto;
             margin-top: 2%;
             
