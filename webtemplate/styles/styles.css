@@ -151,7 +151,8 @@
             padding:10px;
             justify-content: center;
             align-self: center;
-
+            margin-right: 10%;
+            margin-left: 10%;
             
         }
         #ikonelista {
@@ -202,13 +203,6 @@
             text-decoration: none;
             padding-right: auto;
         }
-        #naslov a:nth-child(2){
-            background-color: #376DF9;
-            color: white;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-        }
         #singup{
             background-color: rgb(49, 69, 247);
             border: none;
@@ -226,7 +220,27 @@
         #singup:hover {
             opacity: 1;
             }
-
+        #naslov a:nth-child(2){
+            background-color: #376DF9;
+            border: none;
+            color: white;
+            padding: 19px 20px;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+            border-radius: 2px;
+            cursor: pointer;       
+        }
+        @media screen and (max-width:600px){
+            #naslov a:nth-child(2){
+                width: 40%;
+                margin-left: 50%;
+            }
+            #naslov a:nth-child(1) {
+                margin-right: 10%;
+            }
+        }
         #nj{
             margin-left: 10%;
             margin-bottom: 5%;
@@ -274,8 +288,8 @@
             font-family: "Heebo", sans-serif;
             color: #959CB1;
             text-align: center;
-            margin-left: 25%;
-            margin-right: 25%;
+            margin-left: 14%;
+            margin-right: 14%;
             margin-bottom: 4%;
             font-size: 20px;
             line-height: 32px;
@@ -359,9 +373,9 @@
         }
         #cssve p {
             font-size: 21px;
-            margin-left: 25%;
-            margin-right: 25%;
+            
         }
+
         #poljacon {
 
             margin-right: 15%;
@@ -493,24 +507,16 @@
             background-color: #16171B;
             width: auto;
             margin-top: 2%;
-            
             }
 
             .topnav a {
             float: right;
             display: inline;
-            color: #f2f2f2;
             text-align: center;
             padding: 14px 16px;
             text-decoration: none;
             font-size: 17px;
-            }
-
-            .active {
-            background-color: #4CAF50;
-            color: white;
-            }
-
+            }    
             .topnav .icon {
             display: none;
             }
