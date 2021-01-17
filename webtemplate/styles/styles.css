@@ -21,27 +21,46 @@
                 height: auto;
             }
         }
-        @media (max-width: 700px) {
+        @media screen and (max-width:800px){
+            #nj h1 {
+                width: 70% !important;
+                font-family: "Fira Sans", sans-serif;
+                font-size: 40px;
+            }
+            #njh {
+                width: 70% !important;
+            }
+            #zavideo video {
+                margin: auto;
+                width: 512px;
+                height: 288px;
+            }
+        }
+        @media (max-width: 600px) {
+
             #nj h1 {   
-                margin-left: 35%;
-                margin-right: 35%;
+                width: 95% !important;
+                align-self: center;
                 text-align: center;
             }
-            #njh{
-                height: auto;
+            #njh {
+                width: 100% !important;
             }
             #njh p {   
-            margin-left: 10%;
-            width: 200%;
             color: #959CB1; 
             font-size: 20px;
             line-height: 30px;
             text-align: center;
 
             }
+            #njb {
+                width: auto;
+
+            }
             #ps button {
-                width: 90%;
-                margin: 30%;
+                width: 60%;
+                margin-left: 20%;
+                margin-right: 20%;
             }
         }
         @media screen and (max-width: 600px) {
@@ -50,9 +69,9 @@
                 height: auto;
             }
             #zavideo video {
-                
-                width: 330px;
-                height: 200px;
+                margin: auto;
+                width: 448px;
+                height: 252px;
             }
             #opisvidea p {
                 display: block;
@@ -75,8 +94,7 @@
 
         @media screen and (max-width:600px) {
             #cs {
-                padding-top: 80px;
-                padding-bottom: 80px;
+                
                 box-sizing: inherit;
                 line-height: 32px;
                 letter-spacing: -0.1px;
@@ -101,7 +119,6 @@
                 font-size: 10px;
                 text-align: center;
                 float: left;
-                
                 }
                 #dpolje, #cpolje, #spolje{
                 display: grid;
@@ -124,6 +141,18 @@
 
                 }
             }
+            @media screen and (max-width:1000px){
+                
+                #svicitati{
+                align-self: flex-start;
+                justify-content: space-around;
+                width: 100%;
+                display: grid !important;
+                height: auto;
+                padding-bottom: 15%;
+
+                }
+            }
             
         ul {
             list-style-type: none;
@@ -132,15 +161,19 @@
             justify-content: center;
             align-content: center;
             color: whitesmoke;
-            margin: auto;
-            width: 90%;
-            padding: auto;
+            width: 80%;
+            margin: 10%;
+            margin-top: 2%;
             font-family: "Heebo", sans-serif;
+        }
+        #ds {
+            border-bottom: 2px solid #26272e;
         }
         #ikone:before, #ikone:after {
             display:table;
             content:"";
         }
+
 
         #ikone:after {
             clear:both;
@@ -151,8 +184,7 @@
             padding:10px;
             justify-content: center;
             align-self: center;
-            margin-right: 10%;
-            margin-left: 10%;
+
             
         }
         #ikonelista {
@@ -163,8 +195,8 @@
         #ikonelista li {
             display: inline-flex;
             margin: 5%;
-            width:auto;
-            margin-bottom: 15%;
+            width:9%;
+            margin-bottom: 5%;
             align-items: center;
             
         }
@@ -174,15 +206,34 @@
             height:auto;
         }
 
-        @media screen and (max-width:767px) {
+        @media screen and (max-width:800px) {
             #ikonelista li {
                 width:auto;
             }
         }
         #ps {
-
-            margin-top: 4%;
-            width: 70%;
+            position: relative;
+            margin-top: 10%;
+            padding-bottom: 5%;
+            width: 100%;
+            border-bottom: 2px solid #26272e;
+            
+        }
+        .illustrator-img{
+            background-size: cover;
+            content: '';
+            position: relative;
+            width: 100%;
+            max-width: 98%;
+            height: 612px;
+            background-image: url(../images/illustration-section-01.svg);
+            background-repeat: no-repeat;
+            background-size: auto;
+            left: 50%;
+            top: 0;
+            background-position: center top;
+            -webkit-transform: translate(-50%);
+            transform: translate(-50%);
         }
         #top {
             display: flex;
@@ -224,15 +275,15 @@
             background-color: #376DF9;
             border: none;
             color: white;
-            padding: 19px 20px;
+            padding: 10px 27px;
             text-align: center;
             text-decoration: none;
             font-weight: bold;
             font-size: 14px;
             border-radius: 2px;
-            cursor: pointer;       
+            cursor: pointer;
         }
-        @media screen and (max-width:600px){
+        @media screen and (max-width:800px){
             #naslov a:nth-child(2){
                 width: 40%;
                 margin-left: 50%;
@@ -242,37 +293,45 @@
             }
         }
         #nj{
-            margin-left: 10%;
             margin-bottom: 5%;
-            width: 60%;
+
         }
         #njh{
-            margin-left: 10%;
-            width: 55%;
+            width: 40%;
             color: #959CB1; 
-            font-size: 150%;
+            font-size: 20px;
             line-height: 32px;
             letter-spacing: -0.1px;
 
         }
 
-        h1 {
-            font-size: 300%;
+        #nj h1 {
+            width: 40%;
+            font-family: "Fira Sans", sans-serif;
+            font-size: 40px;
         }
         #gtsbtn {
-            margin-top: 3%;         
-            background-color: #376DF9; 
-            border: none;
-            color: white;
-            padding: 19px 40px;
-            text-align: center;
-            text-decoration: none;
-            font-weight: bold;
+            display: -webkit-inline-box;
+            display: inline-flex;
             font-size: 14px;
+            line-height: 22px;
+            font-weight: 700;
+            padding: 12px 31px;
+            height: 48px;
+            text-decoration: none !important;
+            text-transform: uppercase;
+            color: #F9FAFF;
+            background-color: #376DF9;
+            border-width: 1px;
+            border-style: solid;
+            border-color: rgba(0,0,0,0);
             border-radius: 2px;
-            margin-bottom: 5%;
-            margin-left: 10%;
             cursor: pointer;
+            -webkit-box-pack: center;
+            justify-content: center;
+            text-align: center;
+            letter-spacing: inherit;
+            white-space: nowrap;
         }
         #nd {
             text-align: center;
@@ -288,8 +347,9 @@
             font-family: "Heebo", sans-serif;
             color: #959CB1;
             text-align: center;
-            margin-left: 14%;
-            margin-right: 14%;
+            width: 50%;
+            margin-left: 25%;
+            margin-right: 25%;
             margin-bottom: 4%;
             font-size: 20px;
             line-height: 32px;
@@ -301,21 +361,24 @@
         }
 
         #nt {
+            margin-top: 7%;
             text-align: center;
             font-size: 150%;
             font-family: "Fira Sans", sans-serif;
         }
+        
         #opiscs{
             font-family: "Heebo", sans-serif;
             color: #959CB1;
             text-align: center;
-            margin-left: 14%;
-            margin-right: 14%;
+            margin-left: 17%;
+            margin-right: 17%;
             margin-bottom: 4%;
-            font-size: 20px;
             line-height: 32px;
             letter-spacing: -0.1px;
+            
         }
+
         #ppolje, #tpolje, #pppolje{
             box-sizing: border-box;
             width: 47%;
@@ -335,7 +398,7 @@
             display:    block;
             text-align: center;
             float: right;
-            
+
         }
         #slika {
             display: inline-flex;
@@ -358,28 +421,38 @@
             color: #959CB1;
         }
         #cs{
+            margin-bottom: -2%;
             margin-left: 5%;
             margin-right: 5%;
-
+            padding-bottom: 7%;
+            border-bottom: 2px solid  #26272e;
         }
         #cssve {
             align-content: center;
-            width: 100%;
-        }
-        #cssve h2 {
-            padding-top: 7%;
-            margin-left:7%;
-            margin-right: 7%;
-        }
-        #cssve p {
-            font-size: 21px;
+            width: 90%;
+            margin-left: 5%;
+            margin-right: 5%;
             
+        }
+
+        
+        #cssve:first-child p {
+            font-size: 20px;
+            line-height: 32px;
+            letter-spacing: -0.1px;
+        }
+        #ts{
+            
+            padding-bottom: 7%;
+            border-bottom: 2px solid  #26272e;
+        }
+        #pps{
+            margin-top: 5%;
+            border-bottom: 2px solid  #26272e;
         }
 
         #poljacon {
 
-            margin-right: 15%;
-            margin-left: 15%;
             display: table-row;
             flex-wrap: wrap;
             -webkit-box-pack: center;
@@ -397,15 +470,20 @@
             text-align: center;
             font-size: 34px;
             margin: auto;
-            padding-top: 10%;
+            padding-top: 2%;
             padding-bottom: 5%;
-            width: 70%;
+            width: 85%;
+        }
+        @media screen and (max-width:600px) {
+            #naslovcontent {
+                padding-top: 3% !important;
+            }
         }
         #naslovcontent p{
             font-family: "Heebo", sans-serif;
             color: #959CB1;
             text-align: center;
-            font-size: 25px;
+            font-size: 20px;
             line-height: 32px;
             letter-spacing: -0.1px
         }
@@ -413,10 +491,9 @@
             align-self: flex-start;
             justify-content: center;
             width: 100%;
-
             display: inline-flex;
             height: auto;
-            padding-bottom: 15%;
+            padding-bottom: 7%;
         }
         #pcitat { 
             display: -webkit-box;
@@ -433,7 +510,7 @@
             flex-basis: 344px;
             max-width: 344px;
             background: #292B32;
-            
+            position: relative;
         }
         #ng {
             
@@ -452,7 +529,7 @@
             
         }
         #pacitat{
-            font-size: 20px;
+            font-size: 19px;
         }
         #pzaglcit {
             font-size: 20px;
@@ -472,51 +549,126 @@
         #tnasl{
             float: left;
         }
+        #sendmail{
+            padding-top: 7%;
+            padding-bottom: 7%;
+        }
         #sendcontainer{
-            padding-top: 64px;
-            padding-bottom: 64px;
+
             background-color: #376DF9;
             background: linear-gradient(100deg, #376DF9 0, #FF5FA0 75%, #FFC55A 100%);
         }
         #sendcontainer{
+            padding-top: 5px;
+            padding-bottom: 20px;
             width: 90%;
             margin:auto;
             text-align: center;
-            display: table;
+
             background-color: #376DF9;
             background: linear-gradient(100deg, #376DF9 0, #FF5FA0 75%, #FFC55A 100%);
             margin-bottom: 10%;
         }
         #sendnaslov{
-            margin-bottom: 0;
-            font-size: 32px;
+            width: 50%;
+            display: inline !important;
+            font-size: 20px;
+            margin-right: 0;
             line-height: 42px;
             color: #F9FAFF;
             font-family: "Fira Sans", sans-serif;
+        }
+        #unos {
+            width: 20%;
+  
         }
         #posalji{
             width: 40%;
             padding: 8px;
             margin: 4px 0;
-            display: inline-block;
+            font-size: 16px;
             border: none;
             box-sizing: border-box;
+            border-radius: 3px;
+            outline-color: #ffffff;
         }
+
+        @media screen and (max-width:600px) {
+            #posalji{
+                width: 60%;
+                padding: 8px;
+                margin: 4px 0;
+                font-size: 16px;
+                border: none;
+                box-sizing: border-box;
+                border-radius: 3px;
+                outline-color: #ffffff;
+            }
+        }
+        #fsz {
+            padding-bottom: 10%;
+            
+        }
+        #prred{
+            display: -webkit-box;
+            display: flex;
+            -webkit-box-pack: justify;
+            justify-content: space-between;
+            -webkit-box-align: center;
+            align-items: center;
+        }
+        #st {
+            display: flex;
+        }
+        #st svg {
+            fill: #376DF9;
+            margin: 5px;
+        }
+        #aus {
+
+            display: -webkit-box;
+            display: block;
+            -webkit-box-pack: justify;
+            justify-content: space-between;
+            -webkit-box-align: center;
+            align-items: center;
+        }
+        #infl ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+          }
+          
+        #infl li {
+            margin-left: 2%;
+            float: right;
+            display: inline;
+            justify-content: space-between;
+            font-size: 15px;
+          }
+
         .topnav {
             overflow: hidden;
-            background-color: #16171B;
             width: auto;
             margin-top: 2%;
+            
             }
 
             .topnav a {
             float: right;
             display: inline;
+            color: #f2f2f2;
             text-align: center;
-            padding: 14px 16px;
+            padding: 4px 7px;
             text-decoration: none;
             font-size: 17px;
-            }    
+            }
+
+            .active {
+            background-color: #4CAF50;
+            color: white;
+            }
+
             .topnav .icon {
             display: none;
             }
@@ -564,7 +716,7 @@
             display: block;
             }
 
-            @media screen and (max-width: 600px) {
+            @media screen and (max-width: 800px) {
             .topnav a  {
                 display: none;
             }
@@ -575,7 +727,7 @@
             }
         }
 
-            @media screen and (max-width: 600px) {
+            @media screen and (max-width: 800px) {
             .topnav.responsive {position: relative;}
             .topnav.responsive .icon {
                 position: absolute;
