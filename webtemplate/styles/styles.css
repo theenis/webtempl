@@ -679,6 +679,7 @@ video {
 }
 #st svg {
   fill: #376df9;
+  margin: 10px;
 }
 #fl {
   margin-left: 15px;
