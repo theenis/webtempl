@@ -67,7 +67,6 @@ main {
     line-height: 30px;
     text-align: center;
     width: 90% !important;
-    margin-right: ;
     margin-left: 15%;
   }
   #njb {
@@ -106,10 +105,6 @@ main {
   }
 }
 
-@media screen and (max-width: 600px) {
-  #cs {
-  }
-}
 @media screen and (max-width: 800px) {
   #poljacon {
     display: grid;
@@ -386,8 +381,6 @@ video {
   letter-spacing: -0.1px;
 }
 
-#opiscs {
-}
 #ppolje,
 #dpolje,
 #tpolje,
@@ -443,10 +436,6 @@ video {
   font-size: 18px;
   line-height: 30px;
   letter-spacing: -0.1px;
-}
-#cs {
-}
-#cssve {
 }
 
 #ts {
@@ -593,7 +582,7 @@ video {
 #sendnaslov {
   margin-top: 2%;
   display: grid;
-  grid-template-columns: 65% 30%;
+  grid-template-columns: 60% 30%;
   font-size: 26px !important;
   margin-right: 0;
   line-height: 42px;
@@ -602,10 +591,6 @@ video {
 }
 #unos {
   width: 20%;
-}
-#sendnaslov svg {
-  margin-left: -4%;
-  position: relative;
 }
 
 @media screen and (max-width: 1000px) {
@@ -622,9 +607,7 @@ video {
     font-size: 24px !important;
     display: table !important;
   }
-  #sendnaslov svg {
-    margin-left: -6% !important;
-  }
+
   #posalji {
     height: 48px !important;
     margin-top: 0% !important;
@@ -642,10 +625,10 @@ video {
 }
 
 #posalji {
-  margin-left: 10%;
+  padding-left: 5%;
   width: 90%;
   height: 48px;
-  margin-top: 12%;
+  margin-top: 8%;
   font-size: 16px;
   border: none;
   box-sizing: border-box;
@@ -696,7 +679,13 @@ video {
 }
 #st svg {
   fill: #376df9;
-  margin: 10px;
+}
+#fl {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+#fl svg {
+  margin-left: -12%;
 }
 #aus {
   margin-top: 3%;
@@ -734,7 +723,7 @@ video {
 .topnav a {
   float: right;
   display: inline;
-  color: #f2f2f2;
+  color: #959cb1;
   text-align: center;
   padding: 11px 7px;
   text-decoration: none;
@@ -780,7 +769,7 @@ video {
 }
 
 .topnav a:hover {
-  background-color: #555;
+  background-color: transparent;
   color: white;
 }
 
@@ -825,3 +814,4 @@ video {
     position: relative;
   }
 }
+
