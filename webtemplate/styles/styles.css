@@ -595,16 +595,16 @@ video {
 
 @media screen and (max-width: 1000px) {
   #sendcontent {
-    margin-left: 10% !important;
-    margin-right: 10% !important;
+    margin-left: 0% !important;
+    margin-right: 0% !important;
   }
   #sendcontainer {
-    width: 90% !important;
+    width: 99% !important;
   }
   #sendnaslov {
     margin-left: 5% !important;
     margin-right: 5% !important;
-    font-size: 24px !important;
+    font-size: 20px !important;
     display: table !important;
   }
 
@@ -648,24 +648,66 @@ video {
   }
 }
 @media screen and (max-width: 800px) {
+  footer {
+    display: flex !important;
+    justify-content: space-between !important;
+    flex-wrap: wrap !important;
+    flex-direction: column !important;
+  }
   #fsz {
-    width: 90% !important;
+    display: flex;
+    flex-direction: column;
   }
-  #sendcontainer {
-    margin: 0px !important;
+  #infl {
+    float: none !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: space-between !important;
+    flex-direction: column !important;
+    justify-content: space-between;
+    font-size: 14px;
+    width: 50%;
+    margin-left: 22%;
+    margin-right: 22%;
+    margin-top: -3%;
   }
-  #sendmail {
-    margin-right: 0px !important;
-    width: 99% !important;
+  #footer-copyright {
+    width: 90%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: -3%;
   }
-  #sendcontainer {
-    margin-right: 0px !important;
-    width: 90% !important;
+  #prred,
+  #socmed {
+    margin-left: 2%;
+    float: none !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: space-between !important;
+    flex-direction: column !important;
+    justify-content: space-between;
+    font-size: 14px;
+    width: 67%;
+    margin-left: 14%;
+  }
+
+  #links li {
+    padding: 2%;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    padding-right: 0%;
+  }
+  #infl ul {
+    list-style-type: none;
+    margin: 0;
+
+    right: 12%;
+    position: relative;
+    padding: 0;
   }
 }
-#fsz {
-  padding-bottom: 10%;
-}
+
 #prred {
   display: -webkit-box;
   display: flex;
@@ -815,4 +857,3 @@ video {
     position: relative;
   }
 }
-
