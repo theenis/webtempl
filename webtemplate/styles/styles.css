@@ -1,5 +1,4 @@
-
-       body {
+body {
   background-color: #16171b;
   width: 99%;
 }
@@ -9,7 +8,7 @@ main {
 @media screen and (max-width: 600px) {
   body {
     background-color: #16171b;
-    width: 100% !important;
+    width: 90% !important;
   }
   main {
     width: 100% !important;
@@ -23,7 +22,7 @@ main {
 @media screen and (max-width: 800px) {
   body {
     background-color: #16171b;
-    width: 99% !important;
+    width: 90% !important;
   }
   main {
     width: 100% !important;
@@ -38,12 +37,12 @@ main {
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1200px) {
   #nj h1 {
-    width: 95% !important;
-    font-family: "Fira Sans", sans-serif;
-    font-size: 40px;
+    width: 80% !important;
   }
+}
+@media screen and (max-width: 800px) {
   #njh {
     width: 70% !important;
   }
@@ -53,7 +52,7 @@ main {
     height: 300px !important;
   }
 }
-@media (max-width: 650px) {
+@media (max-width: 600px) {
   #nj h1 {
     width: 95% !important;
     align-self: center;
@@ -67,6 +66,9 @@ main {
     font-size: 20px;
     line-height: 30px;
     text-align: center;
+    width: 90% !important;
+    margin-right: ;
+    margin-left: 15%;
   }
   #njb {
     width: auto;
@@ -84,8 +86,8 @@ main {
   }
   #zavideo video {
     margin: auto;
-    width: 448px;
-    height: 252px;
+    width: 480px !important;
+    height: 270px !important;
   }
   #opisvidea {
     width: 90% !important;
@@ -122,7 +124,6 @@ main {
     align-self: flex-start;
     justify-content: space-around;
     width: 100%;
-    display: grid !important;
     height: auto;
     margin-left: 0px !important;
     margin-right: 0px !important;
@@ -130,11 +131,17 @@ main {
   }
 }
 @media screen and (max-width: 1000px) {
+  #njh {
+    width: 100% !important;
+  }
+  #njh p {
+    width: 70% !important;
+  }
   #svicitati {
     align-self: flex-start;
     justify-content: space-around;
     width: 100%;
-    display: grid !important;
+    flex-wrap: wrap;
     height: auto;
     padding-bottom: 15%;
   }
@@ -266,7 +273,7 @@ a:hover {
   text-align: center;
   text-decoration: none;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 16px;
   border-radius: 2px;
   cursor: pointer;
 }
@@ -503,7 +510,7 @@ video {
   justify-content: center;
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
+
   margin-left: -24px;
   margin-right: -24px;
   height: auto;
@@ -587,7 +594,7 @@ video {
   margin-top: 2%;
   display: grid;
   grid-template-columns: 65% 30%;
-  font-size: 30px;
+  font-size: 26px !important;
   margin-right: 0;
   line-height: 42px;
   color: #f9faff;
@@ -600,11 +607,18 @@ video {
   margin-left: -4%;
   position: relative;
 }
-@media screen and (max-width: 700px) {
+
+@media screen and (max-width: 1000px) {
+  #sendcontent {
+    margin-left: 10% !important;
+    margin-right: 10% !important;
+  }
   #sendcontainer {
     width: 90% !important;
   }
   #sendnaslov {
+    margin-left: 5% !important;
+    margin-right: 5% !important;
     font-size: 24px !important;
     display: table !important;
   }
@@ -626,14 +640,7 @@ video {
     margin-top: -30%;
   }
 }
-@media screen and (max-width: 600px) {
-  #posalji {
-    height: 48px !important;
-    margin-top: 0% !important;
-    width: 95% !important;
-    margin-left: 0% !important;
-  }
-}
+
 #posalji {
   margin-left: 10%;
   width: 90%;
@@ -646,15 +653,31 @@ video {
   outline-color: #ffffff;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   #posalji {
-    width: 60% !important;
-    height: 48% !important;
+    width: 90% !important;
+    height: 48px !important;
     font-size: 16px;
     border: none;
     box-sizing: border-box;
     border-radius: 3px;
     outline-color: #ffffff;
+  }
+}
+@media screen and (max-width: 800px) {
+  #fsz {
+    width: 90% !important;
+  }
+  #sendcontainer {
+    margin: 0px !important;
+  }
+  #sendmail {
+    margin-right: 0px !important;
+    width: 99% !important;
+  }
+  #sendcontainer {
+    margin-right: 0px !important;
+    width: 90% !important;
   }
 }
 #fsz {
@@ -715,7 +738,7 @@ video {
   text-align: center;
   padding: 11px 7px;
   text-decoration: none;
-  font-size: 13px;
+  font-size: 16px;
 }
 
 .active {
