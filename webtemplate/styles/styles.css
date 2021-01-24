@@ -41,7 +41,7 @@ header {
 }
 
 .content {
-  width: 94%;
+  width: 100%;
   font-size: 20px;
   line-height: 30px;
   text-align: justify;
@@ -54,7 +54,7 @@ header {
   line-height: 60px;
   position: fixed;
   float: left;
-  margin: 16px 46px;
+  margin: 25px 46px;
   color: #fff;
   font-weight: bold;
   font-size: 20px;
@@ -84,6 +84,8 @@ nav ul {
 
 nav.black ul {
   background-color: #3a3b42;
+
+  margin-left: -1%;
 }
 
 nav ul li {
@@ -122,6 +124,7 @@ nav ul li a {
   nav ul {
     max-height: 0px;
     background: #3a3b42;
+    margin-left: -2%;
   }
 
   .menu-icon {
@@ -160,9 +163,12 @@ nav ul li a {
   width: 80%;
 }
 @media screen and (max-width: 699px) {
+  #naslovcontent {
+    line-height: 40px;
+  }
   #svesekc {
     margin-left: 10%;
-    margin-right: 10%;
+    margin-right: 0% !important;
     width: 80%;
   }
 }
@@ -248,7 +254,7 @@ nav ul li a {
 
 @media screen and (max-width: 1000px) {
   #njh {
-    width: 80% !important;
+    width: 80%;
   }
   #njh p {
     width: 90%;
@@ -364,12 +370,11 @@ nav ul li a {
 }
 
 #opisvidea {
-  font-family: "Heebo", sans-serif;
   color: #959cb1;
   text-align: center;
-  width: 60%;
+  width: 50%;
   margin-top: 3%;
-  margin-left: 20%;
+  margin-left: 25%;
   margin-bottom: 4%;
   font-weight: 200;
   font-size: 20px;
@@ -402,8 +407,8 @@ video {
   }
   #zavideo video {
     margin: auto;
-    width: 310px !important;
-    height: 208px !important;
+    width: 80% !important;
+    height: 40% !important;
   }
   #opisvidea {
     width: 90% !important;
@@ -428,9 +433,9 @@ video {
 #nt p {
   color: #959cb1;
   text-align: center;
-  width: 55%;
+  width: 50%;
   margin-top: 3%;
-  margin-left: 23%;
+  margin-left: 25%;
   margin-bottom: 4%;
   font-weight: 200;
   font-size: 20px;
@@ -451,10 +456,11 @@ video {
 }
 #cssve {
   width: 100%;
+  margin-bottom: 10%;
 }
 #poljacon {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 40% 40%;
   flex-wrap: wrap;
   -webkit-box-pack: center;
   justify-content: center;
@@ -462,7 +468,7 @@ video {
 
   margin-top: -12px;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
   #poljacon {
     display: grid;
     grid-template-columns: none !important;
@@ -477,8 +483,8 @@ video {
   #pppolje p,
   #spolje p {
     width: 80% !important;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 10% !important;
+    margin-right: 10% !important;
     text-align: center;
   }
 }
@@ -501,10 +507,10 @@ video {
 #cpolje p,
 #pppolje p,
 #spolje p {
-  width: 80%;
+  width: 90%;
   text-align: center;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 #slika {
@@ -535,13 +541,14 @@ video {
 #parap p {
   color: #959cb1;
   margin-top: 2%;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 30px;
   letter-spacing: -0.1px;
   font-weight: 200;
 }
 #pps {
   margin-top: 5%;
+  border-top: 2px solid #26272e;
   border-bottom: 2px solid #26272e;
 }
 #naslovcontent {
@@ -552,11 +559,17 @@ video {
   padding-bottom: 5%;
   width: 85%;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
+  .content {
+    line-height: 23px;
+    text-align: unset;
+  }
   #naslovcontent {
     padding-top: 3% !important;
+    width: 100%;
   }
   #naslovcontent h3 {
+    font-size: 38px;
     line-height: 50px;
   }
   #naslovcontent p {
@@ -572,12 +585,22 @@ video {
   #spolje {
     margin-left: 0% !important;
     margin-right: 0% !important;
-    width: 100%;
+    width: 100% !important;
+    text-align: center;
+  }
+  #ppolje p,
+  #dpolje p,
+  #tpolje p,
+  #cpolje p,
+  #pppolje p,
+  #spolje p {
+    margin-left: 0% !important;
+    margin-right: 0% !important;
+    width: 100% !important;
     text-align: center;
   }
 }
 #naslovcontent p {
-  font-family: "Heebo", sans-serif;
   color: #959cb1;
   text-align: center;
   width: 60%;
@@ -688,7 +711,6 @@ video {
   margin-bottom: 10%;
 }
 #sendnaslov {
-  margin-left: 2%;
   margin-top: 2%;
   display: grid;
   align-items: baseline;
@@ -723,13 +745,14 @@ video {
     width: 100% !important;
   }
   #posalji input {
-    margin-top: 0% !important;
-    height: 100% !important;
+    margin-top: 0%;
+    height: 100%;
     margin-top: -30%;
   }
 }
 @media screen and (max-width: 700px) {
   #sendnaslov {
+    padding: 4%;
     font-size: 17px !important;
     display: table !important;
     line-height: 35px !important;
@@ -759,51 +782,24 @@ video {
   }
 }
 @media screen and (max-width: 650px) {
+  #sendcontainer {
+    width: 100% !important;
+    padding-top: 0px !important;
+  }
   #posalji {
     width: 90% !important;
-    height: 48px !important;
+    height: 35px !important;
     font-size: 16px;
     border: none;
     box-sizing: border-box;
     border-radius: 3px;
     outline-color: #ffffff;
+  }
+  #fl svg {
+    margin-left: -15%;
   }
 }
 
-#fl {
-  margin-left: 15px;
-  margin-right: 15px;
-}
-#fl svg {
-  margin-left: -10%;
-}
-#posalji {
-  padding-left: 5%;
-  width: 75%;
-  height: 48px;
-  margin-top: 8%;
-  font-size: 16px;
-  border: none;
-  box-sizing: border-box;
-  border-radius: 3px;
-  outline-color: #ffffff;
-}
-@media screen and (max-width: 1180) {
-  #sendcontainer {
-    display: table-column-group;
-  }
-}
-@media screen and (max-width: 800px) {
-  #posalji {
-    width: 90% !important;
-    height: 48px !important;
-    font-size: 16px;
-    border: none;
-    box-sizing: border-box;
-    border-radius: 3px;
-    outline-color: #ffffff;
-  }
-}
 #aus {
   display: -webkit-box;
   display: block;
@@ -833,7 +829,7 @@ video {
 @media screen and (max-width: 800px) {
   #posalji {
     width: 90% !important;
-    height: 48px !important;
+    height: 48px;
     font-size: 16px;
     border: none;
     box-sizing: border-box;
