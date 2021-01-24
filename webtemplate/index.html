@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Web Template</title>
+    <title>Responsive Sticky Navbar</title>
     <link rel="stylesheet" href="styles/styles.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -21,7 +21,12 @@
       <header>
         <nav>
           <div class="menu-icon">
-            <img src="images/menu12.png" alt="" />
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <line x1="4" y1="6" x2="20" y2="6" />
+              <line x1="4" y1="12" x2="20" y2="12" />
+              <line x1="4" y1="18" x2="20" y2="18" />
+            </svg>
           </div>
 
           <div class="logo"><img src="images/logo.svg" alt="" /></div>
@@ -50,7 +55,7 @@
                           </p>
                         </div>
                         <div id="njb" data-aos="fade-up-right">
-                          <button type="submit" id="gtsbtn">GET STARTED NOW</button>
+                          <a href="http://" id="gtsbtn"> GET STARTED NOW </a>
                         </div>
                       </div>
                     </section>
@@ -247,7 +252,6 @@
           
                     <section id="pps">
                       <div id="citaticont">
-                        <!-- ::before -->
                         <div id="citatnaslov">
                           <div id="naslovcontent">
                             <h3>Don't take our word for it</h3>
@@ -269,8 +273,6 @@
                               <div id="psvicitati">
                                 <div id="ppcitat">
                                   <div id="pacitat">
-                                    <!-- ::before -->
-          
                                     <p>
                                       — Duis aute irure dolor in reprehenderit in voluptate
                                       velit esse cillum dolore eu fugiat nulla pariatur.
@@ -280,10 +282,9 @@
                                     </p>
                                   </div>
                                   <div id="pzaglcit">
-                                    <!-- ::before -->
-                                    <span id="pisca"> Ime pisca </span>
+                                    <a href="http://www.google.com"><span id="pisca"> Ime pisca </span></a>
                                     <span id="slash"> / </span>
-                                    <span id="tekst"> Ime teksta </span>
+                                    <a href="http://www.google.com"><span id="tekst"> Ime teksta </span></a>
                                   </div>
                                 </div>
                               </div>
@@ -299,8 +300,6 @@
                               <div id="psvicitati">
                                 <div id="ppcitat">
                                   <div id="pacitat">
-                                    <!-- ::before -->
-          
                                     <p>
                                       — Duis aute irure dolor in reprehenderit in voluptate
                                       velit esse cillum dolore eu fugiat nulla pariatur.
@@ -310,10 +309,9 @@
                                     </p>
                                   </div>
                                   <div id="pzaglcit">
-                                    <!-- ::before -->
-                                    <span id="pisca"> Ime pisca </span>
+                                    <a href="http://www.google.com"><span id="pisca"> Ime pisca </span></a>
                                     <span id="slash"> / </span>
-                                    <span id="tekst"> Ime teksta </span>
+                                    <a href="http://www.google.com"><span id="tekst"> Ime teksta </span></a>
                                   </div>
                                 </div>
                               </div>
@@ -329,8 +327,6 @@
                               <div id="psvicitati">
                                 <div id="ppcitat">
                                   <div id="pacitat">
-                                    <!-- ::before -->
-          
                                     <p>
                                       — Duis aute irure dolor in reprehenderit in voluptate
                                       velit esse cillum dolore eu fugiat nulla pariatur.
@@ -340,10 +336,9 @@
                                     </p>
                                   </div>
                                   <div id="pzaglcit">
-                                    <!-- ::before -->
-                                    <span id="pisca"> Ime pisca </span>
+                                    <a href="http://www.google.com"><span id="pisca"> Ime pisca </span></a>
                                     <span id="slash"> / </span>
-                                    <span id="tekst"> Ime teksta </span>
+                                    <a href="http://www.google.com"><span id="tekst"> Ime teksta </span></a>
                                   </div>
                                 </div>
                               </div>
@@ -354,7 +349,7 @@
                     </section>
           
                     <section id="sendmail">
-                      <div id="sendcontainer" data-aos="zoom-out"">
+                      <div id="sendcontainer" data-aos="zoom-out">
                         <div id="sendcontent">
                             <div id="sendnaslov">
                                 <h3>
@@ -440,27 +435,6 @@
     <script>
       AOS.init();
     </script>
-
-
-    <script type="text/javascript">
-      // Menu button
-
-      $(document).ready(function () {
-        $(".menu-icon").on("click", function () {
-          $("nav ul").toggleClass("showing");
-        });
-      });
-
-      //  for Scrolling Effect <dont copy code learn it >
-
-      $(window).on("scroll", function () {
-        if ($(window).scrollTop()) {
-          $("nav").addClass("black");
-        } else {
-          $("nav").removeClass("black");
-        }
-      });
-    </script>
+    <script src="script/script.js"></script>
   </body>
 </html>
-
