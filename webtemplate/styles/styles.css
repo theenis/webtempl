@@ -1,14 +1,19 @@
 * {
   font-family: "Quicksand", sans-serif;
   list-style-type: none;
+  box-sizing: border-box;
 }
-a:link {
-  color: #6a6f82;
+a {
   text-decoration: none;
 }
-a:hover {
+.showing a:link {
+  color: #abb2d3;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.showing a:hover {
   color: #f9faff;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 html {
   font-size: 20px !important;
@@ -16,9 +21,7 @@ html {
   letter-spacing: -0.1px !important;
 }
 body {
-  font-family: "Helvetica Neue", sans-serif;
-  font-weight: lighter;
-  background: url(images/illustration-section-01.svg) no-repeat 50% 50%;
+  background: url("../images/illustration-section-01.svg") no-repeat 50% 50%;
   background-size: cover;
   background-color: #16171b;
   color: #f9faff;
@@ -60,8 +63,9 @@ header {
 
 nav {
   position: fixed;
-  width: 80%;
-  margin-left: 10%;
+  width: 101%;
+  margin-top: -1%;
+  margin-left: -1%;
   line-height: 60px;
   z-index: 1000;
 }
@@ -109,12 +113,25 @@ nav ul li a {
   .logo {
     position: fixed;
     top: 0;
-    margin-top: 16px;
+    margin-top: 1%;
+    margin-left: 15%;
   }
-
+  nav {
+    margin-top: -2%;
+  }
   nav ul {
     max-height: 0px;
     background: #3a3b42;
+  }
+
+  .menu-icon {
+    width: 101%;
+    margin-left: -1%;
+    padding-right: 13%;
+  }
+
+  .menu-icon svg {
+    margin-top: 3%;
   }
 
   nav.black ul {
@@ -136,26 +153,17 @@ nav ul li a {
     display: block;
   }
 }
-@media screen and (max-width: 550) {
-  .content {
-    width: 93%;
-  }
-  #ppolje p,
-  #dpolje p,
-  #tpolje p,
-  #cpolje p,
-  #pppolje p,
-  #spolje p {
-    width: 100% !important;
-    text-align: center;
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-}
 #svesekc {
-  padding-left: 15%;
-  padding-right: 5%;
-  max-width: 90%;
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80%;
+}
+@media screen and (max-width: 699px) {
+  #svesekc {
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+  }
 }
 #ps {
   position: relative;
@@ -179,10 +187,16 @@ nav ul li a {
 #nj h1 {
   width: 448px;
   font-size: 45px;
-  line-height: 32px;
+  line-height: 40px;
   letter-spacing: -0.1px;
 }
 @media (max-width: 600px) {
+  #psimg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   #nj h1 {
     width: 99% !important;
     align-self: center;
@@ -201,9 +215,6 @@ nav ul li a {
     text-align: center;
     width: 100% !important;
   }
-  #njb {
-    width: auto;
-  }
   #ps button {
     width: 60%;
     margin-left: 20%;
@@ -218,7 +229,6 @@ nav ul li a {
   font-weight: 700;
   padding: 12px 31px;
   margin-top: 5%;
-  height: 48px;
   text-decoration: none !important;
   text-transform: uppercase;
   color: #f9faff;
@@ -237,10 +247,10 @@ nav ul li a {
 
 @media screen and (max-width: 1000px) {
   #njh {
-    width: 100% !important;
+    width: 80% !important;
   }
   #njh p {
-    width: 90% !important;
+    width: 90%;
   }
   #svicitati {
     align-self: flex-start;
@@ -274,6 +284,7 @@ nav ul li a {
 }
 
 #ikone ul {
+  padding-left: 0;
   display: -webkit-box;
   display: flex;
   flex-wrap: wrap;
@@ -369,12 +380,12 @@ nav ul li a {
     margin-left: 5%;
   }
   #nt p {
-    width: 85% !important;
-    margin-left: 8% !important;
+    width: 100% !important;
+    margin-left: 0% !important;
   }
   #naslovcontent p {
-    width: 92% !important;
-    margin-left: 4% !important;
+    width: 100% !important;
+    margin-left: 0% !important;
   }
 }
 video {
@@ -386,10 +397,11 @@ video {
   #nd h2 {
     text-align: center;
     height: auto;
+    line-height: 50px;
   }
   #zavideo video {
     margin: auto;
-    width: 320px !important;
+    width: 310px !important;
     height: 208px !important;
   }
   #opisvidea {
@@ -402,7 +414,7 @@ video {
 
 @media screen and (max-width: 800px) {
   #njh {
-    width: 70% !important;
+    width: 70%;
   }
 }
 
@@ -426,9 +438,9 @@ video {
 
 @media screen and (max-width: 600px) {
   #nt p {
-    width: 90% !important;
-    margin-left: 5% !important;
-    margin-right: 5% !important;
+    width: 100% !important;
+    margin-left: 0% !important;
+    margin-right: 0% !important;
     margin-top: 3%;
     margin-bottom: 5%;
   }
@@ -463,9 +475,10 @@ video {
   #cpolje p,
   #pppolje p,
   #spolje p {
-    width: 75% !important;
+    width: 80% !important;
+    margin-left: 10%;
+    margin-right: 10%;
     text-align: center;
-    margin-left: 13% !important;
   }
 }
 
@@ -550,6 +563,17 @@ video {
     margin-right: 0% !important;
     margin-left: 0% !important;
   }
+  #ppolje,
+  #dpolje,
+  #tpolje,
+  #cpolje,
+  #pppolje,
+  #spolje {
+    margin-left: 0% !important;
+    margin-right: 0% !important;
+    width: 100%;
+    text-align: center;
+  }
 }
 #naslovcontent p {
   font-family: "Heebo", sans-serif;
@@ -584,13 +608,8 @@ video {
   }
 }
 @media screen and (max-width: 1300px) {
-  #svesekc {
-    padding-left: 10% !important;
-    padding-right: 5% !important;
-    max-width: 90%;
-  }
   #njh {
-    width: 60% !important;
+    width: 60%;
   }
   #svicitati {
     align-self: flex-start;
@@ -630,6 +649,11 @@ video {
   font-size: 20px;
   font-weight: 200;
   border-bottom: 2px solid #33343d;
+}
+@media screen and (max-width: 450px) {
+  #pacitat {
+    font-size: 18px !important;
+  }
 }
 #pzaglcit {
   font-weight: 400;
@@ -674,17 +698,18 @@ video {
   color: #f9faff;
 }
 
-@media screen and (max-width: 1060px) {
+@media screen and (max-width: 1210px) {
   #sendcontent {
     display: grid;
   }
-  #sendcontainer {
+  #sendmail {
     width: 99% !important;
+    margin-bottom: 15%;
   }
   #sendnaslov {
     font-size: 20px !important;
     display: table !important;
-    line-height: 60px !important;
+    line-height: 35px !important;
   }
 
   #posalji {
@@ -706,7 +731,7 @@ video {
   #sendnaslov {
     font-size: 17px !important;
     display: table !important;
-    line-height: 60px !important;
+    line-height: 35px !important;
   }
 }
 #fl {
@@ -744,78 +769,132 @@ video {
   }
 }
 
-#fsz {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  width: 100%;
-  margin-left: 5%;
+#fl {
+  margin-left: 15px;
+  margin-right: 15px;
 }
-
-#prred {
+#fl svg {
+  margin-left: -10%;
+}
+#posalji {
+  padding-left: 5%;
+  width: 75%;
+  height: 48px;
+  margin-top: 8%;
+  font-size: 16px;
+  border: none;
+  box-sizing: border-box;
+  border-radius: 3px;
+  outline-color: #ffffff;
+}
+@media screen and (max-width: 1180) {
+  #sendcontainer {
+    display: table-column-group;
+  }
+}
+@media screen and (max-width: 800px) {
+  #posalji {
+    width: 90% !important;
+    height: 48px !important;
+    font-size: 16px;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 3px;
+    outline-color: #ffffff;
+  }
+}
+#aus {
   display: -webkit-box;
-  display: flex;
-  -webkit-box-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
+  display: block;
   align-items: center;
-  width: 80%;
-  margin-left: 10%;
 }
 #infl {
   flex-direction: column !important;
   justify-content: space-between;
   font-size: 14px;
-  width: 80%;
-  margin-left: 10%;
+  width: 100%;
   margin-bottom: 4%;
   position: relative;
 }
 
 #infl li {
-  margin-left: 2%;
+  margin-left: 3%;
   float: right;
   display: inline;
   justify-content: space-between;
   font-size: 14px;
 }
+@media screen and (max-width: 1180) {
+  #sendcontainer {
+    display: table-column-group;
+  }
+}
+@media screen and (max-width: 800px) {
+  #posalji {
+    width: 90% !important;
+    height: 48px !important;
+    font-size: 16px;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 3px;
+    outline-color: #ffffff;
+  }
+}
+footer {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
 
-@media screen and (max-width: 700px) {
-  footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+#fsz {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+#prred {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  #fsz {
+    width: 100%;
+  }
+  #fcontainer {
     text-align: center;
-    padding-right: 5%;
+  }
+  #fsz {
+    margin-left: 0% !important;
+  }
+  #socmed {
+    margin-top: -3% !important;
   }
   #prred {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin-bottom: -3%;
     flex-direction: column;
     text-align: center;
-    margin-left: 15% !important;
+  }
+  #infl li {
+    float: none;
+  }
+  #infl ul {
+    margin-bottom: -3% !important;
   }
   #st {
     padding: 0px !important;
   }
   #aus {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
     text-align: center;
   }
-  #infl ul {
-    width: 118%;
-  }
   #footer-copyright {
-    width: 125%;
-    margin-left: -5%;
+    padding-left: 2%;
+    padding-right: 0% !important;
   }
-  #links li {
-    margin-left: 2% !important;
+  #footer-coppyright p {
+    margin: 0px !important;
   }
 }
 #prred,
@@ -825,14 +904,12 @@ video {
   font-size: 14px;
 }
 
-#prred {
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  align-items: center;
+#infl ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
+
 #st {
   display: flex;
 }
@@ -840,33 +917,10 @@ video {
   fill: #376df9;
   margin: 10px;
 }
-#fl {
-  margin-left: 15px;
-  margin-right: 15px;
-}
-#fl svg {
-  margin-left: -12%;
-}
-#aus {
-  display: -webkit-box;
-  display: block;
-  -webkit-box-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  align-items: center;
-}
-#infl ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
 
-#infl li {
-  margin-left: 2%;
-  float: right;
-  display: inline;
-  justify-content: space-between;
-  font-size: 14px;
+#infl li a {
+  text-decoration: none;
+  color: #6a6f82;
 }
 
 #footer-copyright {
