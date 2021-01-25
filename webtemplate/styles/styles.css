@@ -695,7 +695,7 @@ video {
   text-decoration: none;
 }
 #sendmail {
-  padding-top: 48px;
+  padding-top: 80px;
 }
 #sendcontainer {
   padding-top: 5px;
@@ -942,6 +942,9 @@ footer {
   }
   #poljacon {
     padding-bottom: 48px !important;
+  }
+  #naslovcontent {
+    padding-top: 48px !important;
   }
   #naslovcontent p {
     margin-bottom: 48px !important;
